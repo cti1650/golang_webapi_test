@@ -5,6 +5,8 @@ tasks:
       go build
     command: |
       ./mycli --help
+      go get .
+      go run .
 vscode:
   extensions:
     - golang.go

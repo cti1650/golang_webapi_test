@@ -17,3 +17,30 @@ Click the above "Open in Gitpod" button to start a new workspace. Once you're re
 ### An existing project
 
 To get started with Golang CLI on Gitpod, add a [`.gitpod.yml`](./.gitpod.yml) file which contains the configuration to improve the developer experience on Gitpod. To learn more, please see the [Getting Started](https://www.gitpod.io/docs/getting-started) documentation.
+
+
+
+## 参考にしたサイト
+
+- [Tutorial: Developing a RESTful API with Go and Gin - The Go Programming Language](https://go.dev/doc/tutorial/web-service-gin)  
+
+### エンドポイント
+
+- 一覧取得
+```
+curl http://localhost:8080/albums
+```
+
+- 要素追加
+```
+curl http://localhost:8080/albums \
+    --include \
+    --header "Content-Type: application/json" \
+    --request "POST" \
+    --data '{"id": "4","title": "The Modern Sound of Betty Carter","artist": "Betty Carter","price": 49.99}'
+```
+
+- 抽出
+```
+curl http://localhost:8080/albums/2
+```
