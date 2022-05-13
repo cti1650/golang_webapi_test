@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "name": "go-vercel-functions-demo",
+  "public": false,
   "builds": [
-    { "src": "*.go", "use": "@vercel/go" }
+    {
+      "src": "main.go",
+      "use": "@vercel/go"
+    }
   ],
-  "routes": [{ "src": "/", "dest": "/" }]
+  "routes": [
+    {
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+      },
+      "src": "/.*",
+      "dest": "main.go"
+    }
+  ]
 }
