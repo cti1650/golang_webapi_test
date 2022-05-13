@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "go-vercel-functions-demo",
+  "builds": [
+    { "src": "*.go", "use": "@vercel/go" }
+  ],
+  "routes": [{ "src": "/", "dest": "/" }]
+}
