@@ -22,6 +22,7 @@ To get started with Golang CLI on Gitpod, add a [`.gitpod.yml`](./.gitpod.yml) f
 
 ## 参考にしたサイト
 
+- [GitPod Go QuickStart](https://www.gitpod.io/docs/quickstart/go)  
 - [Tutorial: Developing a RESTful API with Go and Gin - The Go Programming Language](https://go.dev/doc/tutorial/web-service-gin)  
 
 ### エンドポイント
